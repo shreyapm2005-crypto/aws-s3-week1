@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shreya Mandal | S3 Static Website Project</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background:#0f172a; color:#e2e8f0; text-align:center; line-height:1.6; }
+    header { background:#1e293b; padding:60px 20px; }
+    main { max-width:700px; margin:0 auto; padding:30px 20px; text-align:left; }
+    button { padding:10px 24px; border:0; border-radius:8px; background:#22c55e; font-weight:bold; cursor:pointer; font-size:1rem; }
+    #msg { color:#22c55e; font-weight:bold; min-height:1.5em; }
+    footer { padding:20px; color:#94a3b8; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hello, I'm Shreya Mandal</h1>
+    <p>Cloud Computing student at Pynexia</p>
+    <button onclick="document.getElementById('msg').textContent='Website is running successfully!'">Check status</button>
+    <p id="msg"></p>
+  </header>
+  <main>
+    <h2>About this project</h2>
+    <p>This is a static website built with HTML, CSS and JavaScript for the Amazon S3 static website hosting assignment.</p>
+    <h2>S3 hosting steps</h2>
+    <ul>
+      <li>Create an S3 bucket and turn off Block Public Access.</li>
+      <li>Upload the website files.</li>
+      <li>Enable static website hosting with index.html as the index document.</li>
+      <li>Add a bucket policy that allows public read access (s3:GetObject).</li>
+    </ul>
+  </main>
+  <footer>Shreya Mandal - Week 1 project</footer>
+</body>
+</html>
